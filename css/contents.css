@@ -1,0 +1,127 @@
+#subVisual {
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subVisual01 {
+    background-image: url('../images/sub_visual01.jpg');
+}
+#subVisual .subTitle {
+    /* font-size: 45px;
+    font-weight: 700; */
+    text-transform: capitalize;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container {
+    width: 1200px;
+
+    margin: 0 auto;
+}
+.contentsTitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0;
+}
+.contentsTitle:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 80px;
+    margin: 20px auto;
+    background-color: #970910;
+}
+
+#lnb {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#lnb .btnHome {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-left: 1px solid rgba(255, 255, 225, 0.2);
+}
+#lnb .listBox {
+    margin-left: -1px;
+    float: left;
+    width: 340px;
+    border-left: 1px solid rgba(255, 255, 225, 0.2);
+}
+
+#lnb .listBox a {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    height: 70px;
+    line-height: 70px;
+}
+#lnb .listBox ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#lnb .listBox a i {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    line-height: 70px;
+}
+#lnb .listBox ul li a {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: -1px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#lnb .listBox ul {
+    display: none;
+}
+.greetingBox {
+    background-image: url('../images/greeting01.jpg');
+    background-repeat: no-repeat;
+    padding-left: 600px;
+}
+
+.headerTxt {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.headerTxt strong {
+    color: #970910;
+    font-weight: 700;
+}
+.txt p {
+    margin-bottom: 20px;
+    color: #666;
+    word-break: keep-all;
+}
+.textCenter {
+    text-align: center;
+}
+
+table {
+    border-top: 2px solid #970910;
+    width: 100%;
+}
+table.textCenter {
+    text-align: center;
+}
+table td,
+table th {
+    border: 1px solid #d9d9d9;
+    padding: 15px;
+}
+table th {
+    background-color: #f8f8f8;
+}

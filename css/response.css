@@ -1,0 +1,258 @@
+/* @media all and (max-width: 1550px) {
+    #logo {
+        left: 50px;
+    }
+} */
+@media all and (max-width: 1440px) {
+    #logo {
+        left: 50px;
+    }
+    #gnb .list .depth01 {
+        padding: 0 30px;
+    }
+    #header .utilMenu {
+        right: 20px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #header {
+        position: fixed;
+    }
+    #header .utilMenu .btnAll {
+        display: inline-block;
+    }
+    #gnb {
+        position: fixed;
+        width: 40%;
+        min-height: 100%;
+        left: 100%;
+        top: 0;
+        padding-top: 90px;
+        background: #bf0c14;
+        transition: 0.5s ease-out;
+    }
+    body.open #gnb {
+        left: 60%;
+    }
+    #gnb .list > li {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    #gnb .list > li .depth01 {
+        text-align: left;
+    }
+    #gnb .list > li .depth02 a {
+        padding-left: 30px;
+    }
+    #mainVisual .txtBox .main {
+        font-size: 3rem;
+    }
+    #mainVisual .txtBox .sub {
+        font-size: 1.2rem;
+    }
+    #mainVisual .btnPrev img {
+        width: 70px;
+    }
+    #mainVisual .btnNext img {
+        width: 70px;
+    }
+    #mainVisual .list > li {
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+    }
+    #quickMenu li {
+        width: 33.33%;
+    }
+    #quickMenu li img {
+        width: 100%;
+    }
+    #business .container {
+        padding: 5px;
+    }
+    #business ul {
+        margin: 0;
+    }
+    #business li {
+        width: calc(50% - 10px);
+        /* 넓이에서 마진을 빼야하는데 px %혼용해서 못쓰임 */
+        margin: 5px;
+    }
+    #business li img {
+        width: 100%;
+    }
+    #news .container {
+        padding: 5px;
+    }
+    #news li {
+        margin: 0 5px;
+        width: calc(33.33% - 10px);
+    }
+    #news li:nth-child(1) {
+        margin-left: 5px;
+    }
+    #news .txtBox .title {
+        font-size: 1.25rem;
+    }
+}
+@media all and (max-width: 1024px) {
+    h2 {
+        font-size: 1.5rem; /*html의 font-size: 16px;*/
+    }
+    #business li h3 {
+        font-size: 1.25rem;
+    }
+    #business li p {
+        font-size: 0.8rem;
+    }
+    #news .txtBox .title {
+        font-size: 1rem;
+    }
+}
+
+/*640px보다 큰 모바일은 별로 없으니까~*/
+@media all and (max-width: 640px) {
+    #header {
+        position: fixed;
+        height: 50px;
+    }
+    #logo {
+        left: 20px;
+    }
+    #logo a {
+        padding: 10px 0;
+    }
+    #logo img {
+        height: 30px;
+    }
+    #header .utilMenu {
+        padding-top: 0;
+    }
+    #header .utilMenu a {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    #header .utilMenu .btnAll {
+        display: inline-block;
+    }
+    #header .utilMenu .btnAll span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 15px;
+        transition: 0.25s ease;
+    }
+
+    #header .utilMenu .btnAll span:nth-child(1) {
+        top: 15px;
+    }
+    #header .utilMenu .btnAll span:nth-child(2) {
+        top: 25px;
+    }
+    #header .utilMenu .btnAll span:nth-child(3) {
+        top: 35px;
+    }
+
+    #header .utilMenu .btnAll.open span:nth-child(1) {
+        top: 25px;
+        transform: rotate(45deg);
+    }
+    #header .utilMenu .btnAll.open span:nth-child(2) {
+        top: 25px;
+        opacity: 0;
+    }
+    #header .utilMenu .btnAll.open span:nth-child(3) {
+        top: 25px;
+        transform: rotate(-45deg);
+    }
+
+    #gnb {
+        position: fixed;
+        width: 40%;
+        min-height: 100%;
+        left: 100%;
+        top: 0;
+        padding-top: 50px;
+        background: #bf0c14;
+        transition: 0.5s ease-out;
+    }
+
+    body.open #gnb {
+        left: 60%;
+    }
+    #gnb .list > li {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    #gnb .list > li .depth01 {
+        text-align: left;
+        font-size: 16px;
+        padding: 10px 25px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #gnb .list > li .depth02 a {
+        padding-left: 30px;
+        font-size: 12px;
+    }
+    #mainVisual .txtBox {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #mainVisual .txtBox .main {
+        font-size: 2.3rem;
+    }
+    #mainVisual .txtBox .sub {
+        font-size: 1rem;
+        word-break: keep-all;
+    }
+    #mainVisual .btnPrev img {
+        width: 50px;
+    }
+    #mainVisual .btnNext img {
+        width: 50px;
+    }
+    #mainVisual .btnScroll {
+        bottom: 100px;
+    }
+    #mainVisual .pagination {
+        display: none;
+    }
+    h2 {
+        font-size: 1.25rem; /*html의 font-size: 16px;*/
+    }
+    #quickMenu .container {
+        padding: 5px;
+    }
+    #quickMenu li {
+        float: none;
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+    #quickMenu li:nth-child(2) {
+        margin-top: 10px;
+    }
+    #business li {
+        width: calc(100% - 10px);
+        margin: 10px 5px;
+        /* 마진은 두개 적용되면 하나만 먹힘 */
+        float: none;
+    }
+
+    #business li p {
+        display: none;
+    }
+    #news li {
+        width: calc(100% - 10px);
+        float: none;
+        margin: 10px 5px;
+    }
+}

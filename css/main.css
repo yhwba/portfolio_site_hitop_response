@@ -1,0 +1,359 @@
+#mainVisual {
+    position: relative;
+}
+#mainVisual .list li {
+    height: 100vh;
+    background-size: cover;
+    /* font-size: 0em; */
+    text-indent: -999px; /*화면상에서 글씨 사라지게 하는것 , 스크린리더기가 읽어주도록 또 비장애인들이 보기에 디자인이 */
+}
+
+#mainVisual .list .Visual01 {
+    background-image: url('../images/main_visual01.jpg');
+}
+
+#mainVisual .list .Visual02 {
+    background-image: url('../images/main_visual02.jpg');
+}
+
+#mainVisual .list .Visual03 {
+    background-image: url('../images/main_visual03.jpg');
+}
+
+#mainVisual .txtBox {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    margin-bottom: 20px;
+    z-index: 2;
+}
+#mainVisual .txtBox .main {
+    font-weight: 700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+#mainVisual .txtBox .sub {
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+#mainVisual .btn {
+    z-index: 3;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#mainVisual .btnPrev {
+    left: 0;
+    opacity: 30%;
+}
+#mainVisual .btnNext {
+    opacity: 30%;
+    right: 0;
+}
+#mainVisual .btnScroll {
+    /* z-index: 3;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; */
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+    /* border: 1px solid #f00; */
+    cursor: pointer; /**/
+    /* animation-name: scrollMove;
+    animation-duration: 1s; 1000ms
+    animation-timing-function: ease; 부드럽게 steps(3):3번씩 끊어가겠다.
+    animation-iteration-count: infinite; 카운트를 몇번
+    animation-direction: alternate; 다시 올라오게하고싶다 */
+    animation: scrollMove 1s ease infinite alternate;
+}
+#mainVisual .btnScroll span {
+    padding-top: 5px;
+    display: block;
+}
+
+#mainVisual .pagination {
+    position: absolute;
+    z-index: 4;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+#mainVisual .pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border: 3px solid #fff;
+    background-color: transparent;
+    border-radius: 100px;
+    transition: 0.25s ease;
+}
+#mainVisual .pagination .swiper-pagination-bullet-active {
+    width: 80px;
+    background-color: #fff;
+}
+#quickMenu {
+    position: relative;
+    z-index: 3;
+}
+#quickMenu li {
+    float: left;
+    /*inline-block하면 여백 생겨서 안들어가고 사진이 떨어짐 그래서 float사용해야함*/
+    position: relative;
+    overflow: hidden;
+}
+#quickMenu li:nth-child(2) {
+    margin-top: -100px;
+}
+
+#quickMenu li .txtBox {
+    position: absolute;
+    color: #fff;
+    bottom: 40px;
+    left: 40px;
+    z-index: 6;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+.titleBox {
+    margin-bottom: 50px;
+}
+#quickMenu li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+#quickMenu li img {
+    transition: 0.25s ease;
+}
+#quickMenu li:hover img {
+    transform: scale(1.2);
+}
+#quickMenu li:hover a:after {
+    opacity: 1;
+}
+/* Business start */
+#business {
+    background-image: url(../images/bg_business.jpg);
+    padding: 80px 0;
+    margin-top: 80px;
+}
+#business ul {
+    margin: -10px;
+}
+
+#business li :nth-child(2n) {
+    /*짝수 번째만 없애고 싶을때 ,odd는 홀수*/
+    margin-right: 0;
+}
+#business li {
+    float: left;
+    width: 590px; /*기능성포장재의 글씨가 길어서 옆으로 떨어지기때문에 부모의 너비를 지정*/
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+#business li img {
+    transition: 0.3s ease;
+}
+#business li:hover img {
+    transform: scale(1.2);
+}
+
+#business li .txtBox {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding-right: 30px;
+}
+#business li h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/* News start */
+#news {
+    margin-top: 80px;
+    overflow: hidden;
+    /*margin:80px 0;*/
+}
+#news li .imgBox {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    /* height: 250px; */
+}
+#news li .imgBox:before {
+    content: '';
+    display: block;
+    padding-top: 100%; /*정사각형을 기준으로 줄이거나 늘릴때 넓이에 반응한다*/
+}
+#news .imgBox img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+}
+#news li {
+    border: 2px solid #d9d9d9;
+    height: 500px;
+    width: 30%;
+    margin: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s ease;
+    overflow: hidden;
+
+    /*
+    float:left;
+    width:378px;
+    margin-left:30px;
+    box-sizing:border-box; 무조건넓이에 패딩보더값포함;
+    overflow:hidden;
+    */
+}
+
+#news li:hover {
+    margin-top: -20px;
+    border: 2px solid #bf0c14;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#news li:hover {
+    animation: newsMove 1s ease infinite alternate;
+}
+#news li:nth-child(3) {
+    margin: none;
+}
+/* #news li:nth-child(1) {
+    margin-left: 0;
+} */
+#news .txtBox {
+    position: absolute;
+    padding: 20px;
+    /* padding:20px;
+     */
+}
+#news .txtBox .title {
+    font-size: 22px;
+    font-weight: 700;
+    /* margin */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 타이틀을 한줄에 넣는 방법 */
+    margin-bottom: 20px;
+}
+#news .txtBox .desc {
+    font-size: 15px;
+    height: 4.5em; /* 내용을 한줄에 넣는 방법 */
+    display: -webkit-box; /*...나오게 하는것/ex는 적용안됨*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #666666;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#news .txtBox .date {
+    color: #d9d9d9;
+}
+
+#customer {
+    margin-top: 80px;
+    overflow: hidden;
+    height: 480px;
+    background-image: url(../images/bg_customer.jpg);
+    background-size: cover;
+    position: relative;
+}
+#customer h2 {
+    line-height: 100px;
+}
+#customer .titleBox {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+#customer .titleBox h2:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    /* margin-left: -10px;*/
+    margin-bottom: 50px;
+    /* top: 0px; */
+    transform: translateX(-50%);
+}
+#customer .titleBox p {
+    padding-top: 30px;
+}
+
+#customer a {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #bf0c14;
+    background-color: #bf0c14;
+    border-radius: 100px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+/* animation */
+@keyframes scrollMove {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, 30px);
+    }
+}
+@keyframes newsMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 30px);
+    }
+}

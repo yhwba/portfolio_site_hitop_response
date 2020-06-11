@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>center</title>
+        <style>
+            /* .main {
+                width: 1500px;
+                padding: 100px 0;
+                border: 1px solid #f00;
+            }
+            .sub {
+                width: 1200px;
+                margin: 0 auto;
+                height: 300px;
+                border: 1px solid #000;
+            } */
+            /* .main {
+                width: 1500px;
+                padding: 100px 0;
+                border: 1px solid #f00;
+                text-align: center;
+                font-size: 0px;
+            }
+            .sub {
+                display: inline-block;
+                width: 100px;
+                height: 300px;
+                border: 1px solid #000;
+            } */
+            /* .main {
+                width: 1500px;
+                padding: 100px 0;
+                border: 1px solid #f00;
+                position: relative;
+            }
+            .sub {
+                display: inline-block;
+                width: 100px;
+                height: 300px;
+                border: 1px solid #000;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            } */
+            /* 여기까지 가로
+             */
+            /* .main {
+                width: 100%;
+                padding: 100px 0;
+                border: 1px solid #f00;
+            }
+            .sub {
+                width: 1200px;
+                margin: 0 auto;
+                height: 300px;
+                border: 1px solid #000;
+            } */
+            .main {
+                width: 100%;
+                height: 800px;
+                border: 1px solid #f00;
+                display: table;
+            }
+            .inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .sub {
+                width: 1200px;
+                margin: 0 auto;
+                height: 300px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="inner">
+                <div class="sub"></div>
+            </div>
+        </div>
+    </body>
+</html>
